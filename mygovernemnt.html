@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <script type="text/javascript" src="common_js/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="common_js/jquery-1.9.1.custom.js"></script>
+  </head>
+  <body>
+  <p>Copy and paste the sharable link from your Google Slides presentation into this box.</p>
+    <input type="text" class="google_slide"/>&nbsp;&nbsp;&nbsp;<input type="button" value="SUBMIT" class="submit_slide"/>
+    <br/>
+    <iframe class="iframe_slide" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+    <script>
+      $(".submit_slide").click(
+      function(){
+        var link=$(".google_slide").val();
+        $(".iframe_slide").attr("src", link);
+      }
+      )
+    </script>
+    <script type="text/javascript" src="common_js/scorm_global.js"></script>
+     <script type="text/javascript" src="common_js/scorm_interactions_v6.js"></script>
+  </body>
+</html>
