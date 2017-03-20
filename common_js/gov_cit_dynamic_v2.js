@@ -368,13 +368,4 @@ $('.gs_rubric').find('td').each(function(){
 
 
 
-//this is a tesetsssss
-
-//Daniel Thompson was here
-
-//Jordan Bender was also here
-
-
-//DRT added another comment
-
 
