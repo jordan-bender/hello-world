@@ -373,3 +373,5 @@ $('.gs_rubric').find('td').each(function(){
 
 //I am typing stuff
 
+
+// Dan is commenting
