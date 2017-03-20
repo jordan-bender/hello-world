@@ -372,4 +372,6 @@ $('.gs_rubric').find('td').each(function(){
 
 //Daniel Thompson was here
 
+//Jordan Bender was also here
+
 
