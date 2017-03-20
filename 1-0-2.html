@@ -1,0 +1,740 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title data-lesson="1.0.2" data-course="SM2.1">Lesson 1.0.2 Factoring</title>
+<link rel="stylesheet" type="text/css" href="common/mathquill-0.10.1/mathquill.css"/>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/cupertino/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="common/jquery.js"></script>
+<script type="text/javascript" src="common/mathquill-0.10.1/mathquill.js"></script>
+<script>var MQ = MathQuill.getInterface(2);</script>
+<link href="common/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="common/grading.css"/>
+  <style>
+	  .star_img{
+		  opacity:0.5;
+		  cursor:pointer;
+	  }
+	  .prime_table td{
+		  cursor:pointer;
+		  width:35px;
+	  }
+	  .prime_instruct td{
+		  padding:10px;
+	  }
+  </style>
+</head>
+<body class="custom_functions" data-progress="stereo">
+  <header class="page-header" data-title="Lesson 1.0.2" data-subtitle="Factoring" data-activity="REVIEW">
+    <div class="generate_toolbar" data-buttons="basic"></div>
+  </header>
+<main id="mainContainer">
+<input type="text" id="factor_me_input_1"/><input type="text" id="factor_me_input_2"/><input type="button" id="factor_me_button" value="Common Factors"/>
+  <section id="mainContent">
+    <section id="question-0" class="question">
+      <div id="notes-0" class="notes">
+        <p class="skill" data-skill="Prime Numbers"></p>
+        <div class="paper">
+          <div class="video" id="v0" data-src="images/videos/1.0.2.1.mp4"></div>
+          <div class="book" id="instructions-0">
+			  <p>If <span id="s0_1" class="mathquill-embedded-latex">A \div B</span> = a whole number (NOT a decimal) then we say that <span class='blue'>B is a factor of A</span>.</p>
+            <div style="margin-left:50px;">
+            <p>EXAMPLE: <span id="s0_s1" class="mathquill-embedded-latex">12 \div 2 = 6</span> &nbsp;&nbsp;&nbsp;&nbsp;because we got whole number answer, 2 is a factor of 12.</p>
+            <p>EXAMPLE: <span id="s0_s2" class="mathquill-embedded-latex">12 \div 5 = 2.4</span> &nbsp;&nbsp;&nbsp;&nbsp;because we got a decimal answer, 5 is NOT a factor of 12.</p>
+			  </div>
+
+            <p>Some numbers have lots of factors</p>
+             <div style="margin-left:50px;">
+            <p>EXAMPLE: 24 can be divided by 1, 2, 3, 4, 6, 8, 12, 24</p>
+			  </div>
+            <p>Some numbers have very few factors.</p>
+             <div style="margin-left:50px;">
+            <p>EXAMPLE: 7 can be divided by 1, 7</p>
+			  </div>
+			  <p>If a number can only be divided by 1 and itself we call it a <span class="blue">PRIME NUMBER</span>.</p>
+  			 <div style="margin-left:50px;">
+            <p>EXAMPLE: 8 can be divided by 1, 2, 4, 8 therefore it is NOT a prime number</p>
+            <p>EXAMPLE: 13 can be divided by 1, 13 therefore it IS a prime number</p>
+			  </div>
+          </div>
+          <br/>
+          <p>A Greek mathematician named Erotosthenes came up with a good way to identify prime numbers. It is called "the Sieve of Erotosthenes".
+          <br/>Let's try using it</p>
+          <div class="star_div">
+            <img src="images/gold_star.png" height="25px" id="star_1" class="star_img"/>
+            <img src="images/gold_star.png" height="25px" id="star_2" class="star_img"/>
+            <img src="images/gold_star.png" height="25px" id="star_3" class="star_img"/>
+            <img src="images/gold_star.png" height="25px" id="star_4" class="star_img"/>
+
+          </div>
+          <br/><br/>
+          <div style="float:left">
+            <table class="prime_table">
+              <tr>
+                <td>&nbsp;</td>
+                <td class="p" data-html='2'>2</td>
+                <td class="p" data-html='3'>3</td>
+                <td class="m2" data-html='4'>4</td>
+                <td class="p" data-html='5'>5</td>
+                <td class="m2" data-html='6'>6</td>
+                <td class="p" data-html='7'>7</td>
+                <td class="m2" data-html='8'>8</td>
+                <td class="m3" data-html='9'>9</td>
+                <td class="m2" data-html='10'>10</td>
+              </tr>
+              <tr>
+               <td class="p" data-html='11'>11</td>
+                <td class="m2" data-html='12'>12</td>
+                <td class="p" data-html='13'>13</td>
+                <td class="m2" data-html='14'>14</td>
+                <td class="m3" data-html='15'>15</td>
+                <td class="m2" data-html='16'>16</td>
+                <td class="p" data-html='17'>17</td>
+                <td class="m2" data-html='18'>18</td>
+                <td class="p" data-html='19'>19</td>
+                <td class="m2" data-html='20'>20</td>
+              </tr>
+              <tr>
+                <td class="m3" data-html='21'>21</td>
+                <td class="m2" data-html='22'>22</td>
+                <td class="p" data-html='23'>23</td>
+                <td class="m2" data-html='24'>24</td>
+                <td class="m5" data-html='25'>25</td>
+                <td class="m2" data-html='26'>26</td>
+                <td class="m3" data-html='27'>27</td>
+                <td class="m2" data-html='28'>28</td>
+                <td class="p" data-html='29'>29</td>
+                <td class="m2" data-html='30'>30</td>
+              </tr>
+              <tr>
+                 <td class="p" data-html='31'>31</td>
+                <td class="m2" data-html='32'>32</td>
+                <td class="m3" data-html='33'>33</td>
+                <td class="m2" data-html='34'>34</td>
+                <td class="m5" data-html='35'>35</td>
+                <td class="m2" data-html='36'>36</td>
+                <td class="p" data-html='37'>37</td>
+                <td class="m2" data-html='38'>38</td>
+                <td class="m3" data-html='39'>39</td>
+                <td class="m2" data-html='40'>40</td>
+              </tr>
+              <tr>
+                <td class="p" data-html='41'>41</td>
+                <td class="m2" data-html='42'>42</td>
+                <td class="p" data-html='43'>43</td>
+                <td class="m2" data-html='44'>44</td>
+                <td class="m5" data-html='45'>45</td>
+                <td class="m2" data-html='46'>46</td>
+                <td class="p" data-html='47'>47</td>
+                <td class="m2" data-html='48'>48</td>
+                <td class="m7" data-html='49'>49</td>
+                <td class="m2" data-html='50'>50</td>
+              </tr>
+            </table>
+            <input type="text" class="save hidden" id="invisible_log" data-desc="Non Primes"/>
+            <table class="prime_instruct" style="width:500px;">
+              <tr>
+                <td style="width:125px;">Step 1:</td>
+                <td style="width:375px;"> The first number you see is prime.<br/>
+                  In this case, the number 2 is prime.<br/>
+                  Drag a gold star onto the number 2.
+                </td>
+              </tr>
+              <tr>
+                <td class="e_s2">Step 2:<br/> <input type="button" class="check" id="check_1b" onclick="special(2)" value="CHECK" data-group="1b"/><br/><input type='text' class='hidden' id="special_2" value="0"/><input type="text" class="eval" id="e_s2" data-group="1b" data-points="5" data-rule="[#special_2;==1]" data-desc="Got rid of multiples of 2."/><span class="red">&uarr;check</span></td>
+                <td> Eliminate all the multiples of this number.  Because they can be divided by 2 they are NOT prime numbers.
+                  (Click on all of the multiples of 2 and they will disappear.)<br/>
+                </td>
+              </tr>
+              <tr>
+                <td class="e_s3">REPEAT:<br/> <input type="button" class="check" id="check_1c" onclick="special(3)" value="CHECK" data-group="1c"/><br/><input type='text' class='hidden' id="special_3" value="0"/><input type="text" class="eval" id="e_s3" data-group="1c" data-points="3" data-rule="[#special_3;==1]"  data-desc="Got rid of multiples of 3."/><span class="red">&uarr;check</span></td>
+                <td> The first number that survived is prime.<br/>
+                This means the number <input type="text" class="save e_u1" id="u1" value="?" style="border:solid red 2px;" data-desc="Prime Number 3"/><input type="text" class="eval" id="e_u1" data-group="1c" data-rule="[#u1;=='3']" data-desc="Knew the next prime number was 3."/> is prime.<br/>
+                Drag a gold star onto this number.<br/>
+                Eliminate all the multiples of this number, because they cannot be prime.<br/>
+                </td>
+              </tr>
+              <tr>
+                <td class="e_s5">REPEAT:<br/> <input type="button" class="check" id="check_1d" onclick="special(5)" value="CHECK" data-group="1d"/><br/><input type='text' class='hidden' id="special_5" value="0"/><input type="text" class="eval" id="e_s5" data-group="1d" data-points="2" data-rule="[#special_5;==1]" data-desc="Got rid of multiples of 5."/><span class="red">&uarr;check</span></td>
+                <td> The first number that survived is prime.<br/>
+                This means the number <input type="text" class="save e_u2" id="u2"  value="?" style="border:solid red 2px;" data-desc="Prime Number 5"/><input type="text" class="eval" id="e_u2"data-group="1d" data-rule="[#u2;=='5']" data-desc="Knew the next prime number was 5."/> is prime.<br/>
+                Drag a gold star onto this number.<br/>
+                Eliminate all the multiples of this number, because they cannot be prime.<br/>
+                </td>
+              </tr>
+              <tr>
+                <td class="e_s7">REPEAT:<br/> <input type="button" class="check" id="check_1e" onclick="special(7)" value="CHECK" data-group="1e"/><br/><input type='text' class='hidden' id="special_7" value="0"/><input type="text" class="eval" id="e_s7" data-group="1e" data-points="2" data-rule="[#special_7;==1]" data-desc="Got rid of multiples of 7."/><span class="red">&uarr;check</span></td>
+                <td> The first number that "survived" is prime.<br/>
+                This means the number <input type="text" class="save e_u3" id="u3" value="?" style="border:solid red 2px;" data-desc="Prime Number 7"/><input type="text" class="eval" id="e_u3" data-group="1e" data-rule="[#u3;=='7']" data-desc="Knew the next prime number was 7."/> is prime.<br/>
+                Drag a gold star onto this number.<br/>
+                Eliminate all the multiples of this number, because they cannot be prime.<br/>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">At this point every number between 1 and 50 that survived is a prime number.<br/>
+
+                </td>
+              </tr>
+            </table>
+          </div>
+			<div style="clear:both;">&nbsp;</div>
+			<p>Now use the table you just generated to classify the following numbers as prime or not prime.</p>
+          <table class="prime_numbers">
+            <tr>
+              <td>4 &nbsp;
+                <select type="list" class="li_s0_q1" name="li-s0_q1">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q1" data-desc="Should be li3."/><input type="text" id="li_s0_q1" class="eval" data-group="1" data-rule="#li-s0_q1;=='li3'" data-desc="Knew 4 was not prime."/>
+              </td>
+              <td>7 &nbsp;
+                <select type="list" class="li_s0_q12" name="li-s0_q12">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q12" data-desc="Should be li2."/><input type="text" id="li_s0_q12" class="eval" data-group="1" data-rule="#li-s0_q12;=='li2'" data-desc="Knew 7 was prime."/>
+              </td>
+              <td>13 &nbsp;
+                <select type="list" class="li_s0_q2" name="li-s0_q2">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q2" data-desc="Should be li2."/><input type="text" id="li_s0_q2" class="eval" data-group="1" data-rule="#li-s0_q2;=='li2'" data-desc="Knew 13 was prime."/>
+              </td>
+
+			 </tr>
+             <tr>
+              <td>20 &nbsp;
+                <select type="list" class="li_s0_q4" name="li-s0_q4">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q4" data-desc="Should be li3."/><input type="text" id="li_s0_q4" class="eval" data-group="1" data-rule="#li-s0_q4;=='li3'" data-desc="Knew 20 was not prime."/>
+              </td>
+              <td>29 &nbsp;
+                <select type="list" class="li_s0_q5" name="li-s0_q5">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q5" data-desc="Should be li2."/><input type="text" id="li_s0_q5" class="eval" data-group="1" data-rule="#li-s0_q5;=='li2'" data-desc="Knew 29 was prime."/>
+              </td>
+              <td>32 &nbsp;
+                <select type="list" class="li_s0_q6" name="li-s0_q6">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q6" data-desc="Should be li3."/><input type="text" id="li_s0_q6" class="eval" data-group="1" data-rule="#li-s0_q6;=='li3'" data-desc="Knew 32 was not prime."/>
+              </td>
+
+			 </tr>
+             <tr>
+              <td>43 &nbsp;
+                <select type="list" class="li_s0_q7" name="li-s0_q7">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q7" data-desc="Should be li2."/><input type="text" id="li_s0_q7" class="eval" data-group="1" data-rule="#li-s0_q7;=='li2'" data-desc="Knew 43 was prime."/>
+              </td>
+              <td>45 &nbsp;
+                <select type="list" class="li_s0_q8" name="li-s0_q8">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q8" data-desc="Should be li3."/><input type="text" id="li_s0_q8" class="eval" data-group="1" data-rule="#li-s0_q8;=='li3'" data-desc="Knew 45 was not prime."/>
+              </td>
+              <td>47 &nbsp;
+                <select type="list" class="li_s0_q10" name="li-s0_q10">
+                  <option value="li1">CHOOSE</option>
+                  <option value="li2">Prime</option>
+                  <option value="li3" >Not Prime</option>
+                </select><input type="text" class="save family" id="li-s0_q10" data-desc="Should be li2."/><input type="text" id="li_s0_q10" class="eval" data-group="1" data-rule="#li-s0_q10;=='li2'" data-desc="Knew 47 was prime."/>
+              </td>
+
+            </tr>
+            <tr>
+              <td colspan="4"><input type="button" id="check_1" class="check" data-group="1" value="CHECK" /><span class="red">&larr;check</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <br/>
+    <section id="question-1" class="question">
+      <div id="notes-1" class="notes">
+        <p class="skill" data-skill="Factors"></p>
+        <div class="paper">
+          <div class="video" id="v1" data-src="images/videos/1.0.2.2.mp4"></div>
+          <div class="book" id="instructions-1">
+          <p>If <span id="s1_a" class="mathquill-embedded-latex">A \div B</span> = a whole number (NOT a decimal) then we say that <span class='blue'>B is a factor of A</span>.</p>
+            <p>EXAMPLE: <span id="s1_s1" class="mathquill-embedded-latex">12 \div 2 = 6</span> &nbsp;&nbsp;&nbsp;&nbsp;because we got a whole number answer, 2 is a factor of 12.</p>
+            <p>EXAMPLE: <span id="s1_s2" class="mathquill-embedded-latex">12 \div 5 = 2.4</span> &nbsp;&nbsp;&nbsp;&nbsp;because we got a decimal answer, 5 is NOT a factor of 12.</p>
+            <p>It saves time if you realize the whole number answer is ALSO a valid factor.</p>
+            <p>EXAMPLE: <span id="s1_s3" class="mathquill-embedded-latex">12 \div 3 = 4</span> &nbsp;&nbsp;&nbsp;&nbsp;because we got a whole number answer, both 3 AND 4 are factors.</p>
+            <p>Finding the factors of a number is a lot easier to do if you know your times tables. However, with a calculator, you can also check for factors by using trial and error.</p>
+            <p>EXAMPLE: What are the factors of 30?</p>
+            <p><span id="s1_s4" class="mathquill-embedded-latex">30 \div 1 = 30</span> &nbsp;&nbsp;&nbsp;&nbsp;therefore both 1 and 30 are factors of 30</p>
+            <p><span id="s1_s5" class="mathquill-embedded-latex">30 \div 2 = 15</span> &nbsp;&nbsp;&nbsp;&nbsp;therefore both 2 and 15 are factors of 30</p>
+            <p><span id="s1_s6" class="mathquill-embedded-latex">30 \div 3 = 10</span> &nbsp;&nbsp;&nbsp;&nbsp;therefore both 3 and 10 are factors of 30</p>
+            <p><span id="s1_s7" class="mathquill-embedded-latex">30 \div 4 = 7.5</span> &nbsp;&nbsp;&nbsp;&nbsp;therefore 4 is NOT a factor of 30</p>
+            <p><span id="s1_s8" class="mathquill-embedded-latex">30 \div 5 = 6</span> &nbsp;&nbsp;&nbsp;&nbsp;therefore both 5 and 6 are factors of 30</p>
+            <p><span id="s1_s9" class="mathquill-embedded-latex">30 \div 6 = </span> &nbsp;&nbsp;&nbsp;&nbsp;We already know that 6 is a factor of 30. At this point we are done. We can stop checking</p>
+            <p>We usually list factors in ascending order. Meaning, we start with the smallest and end with the largest.</p>
+            <p>The factors of 30 are: 1, 2, 3, 5, 6, 10, 15, 30</p>
+            <p>If you have done it correctly, the factors should form "layers" that multiply to the number you want.</p>
+            <p>The factors of 30 are: <span class="red">1</span>, <span class="blue">2</span>, <span class="green">3</span>, <span class="purple">5</span>, <span class="purple">6</span>, <span class="green">10</span>, <span class="blue">15</span>, <span class="red">30</span></p>
+            <p>Notice that each colored pair multiplies to 30.<br/>
+              <span id="s1_s10" class="mathquill-embedded-latex red">1 \cdot 30 = 30</span><br/>
+              <span id="s1_s11" class="mathquill-embedded-latex blue">2 \cdot 15 = 30</span><br/>
+              <span id="s1_s12" class="mathquill-embedded-latex green">3 \cdot 10 = 30</span><br/>
+              <span id="s1_s13" class="mathquill-embedded-latex purple">5 \cdot 6 = 30</span><br/>
+            </p>
+          </div>
+          <div>
+            <p>Write the following factors in ascending order and separated by commas.</p>
+            <p class="blue">EXAMPLE:  The factors of 12 are: 1,2,3,4,6,12</p>
+            <!--<p>The factors of 8 are: <input type="text" class="save e_tb_factors_1" id="tb-factors_1"/><input type="text" class="eval" id="e_tb_factors_1" data-group="3" data-rule="#tb-factors_1;=='1,2,4,8'"/> <input type="button" id="check_3" class="check" data-group="3" value="CHECK" data-feed="#group_3;"/></p>-->
+            <p>The factors of 14 are: <input type="text" class="save e_tb_factors_2" id="tb-factors_2"/><input type="text" class="eval" id="e_tb_factors_2" data-group="4" data-rule="#tb-factors_2;=='1,2,7,14'"/> <input type="button" id="check_4" class="check" data-group="4" value="CHECK" data-feed="#group_4;"/> </p>
+            <p>The factors of 27 are: <input type="text" class="save e_tb_factors_3" id="tb-factors_3"/><input type="text" class="eval" id="e_tb_factors_3" data-group="5" data-rule="#tb-factors_3;=='1,3,9,27'"/> <input type="button" id="check_5" class="check" data-group="5" value="CHECK" data-feed="#group_5;"/> </p>
+            <!--<p>The factors of 35 are: <input type="text" class="save e_tb_factors_4" id="tb-factors_4"/><input type="text" class="eval" id="e_tb_factors_4" data-group="6" data-rule="#tb-factors_4;=='1,5,7,35'"/> <input type="button" id="check_6" class="check" data-group="6" value="CHECK" data-feed="#group_6;"/> </p>-->
+            <!--<p>The factors of 42 are: <input type="text" class="save e_tb_factors_5" id="tb-factors_5"/><input type="text" class="eval" id="e_tb_factors_5" data-group="7" data-rule="#tb-factors_5;=='1,2,3,6,7,14,21,42'"/> <input type="button" id="check_7" class="check" data-group="7" value="CHECK" data-feed="#group_7;"/> </p>-->
+            <p>The factors of 55 are: <input type="text" class="save e_tb_factors_6" id="tb-factors_6"/><input type="text" class="eval" id="e_tb_factors_6" data-group="8" data-rule="#tb-factors_6;=='1,5,11,55'"/> <input type="button" id="check_8" class="check" data-group="8" value="CHECK" data-feed="#group_8;"/> </p>
+            <p>The factors of 60 are: <input type="text" class="save e_tb_factors_7" id="tb-factors_7"/><input type="text" class="eval" id="e_tb_factors_7" data-group="9" data-rule="#tb-factors_7;=='1,2,3,4,5,6,10,12,15,20,30,60'"/> <input type="button" id="check_9" class="check" data-group="9" value="CHECK" data-feed="#group_9;"/> </p>
+            <!--<p>The factors of 72 are: <input type="text" class="save e_tb_factors_8" id="tb-factors_8"/><input type="text" class="eval" id="e_tb_factors_8" data-group="10" data-rule="#tb-factors_8;=='1,2,3,4,6,8,9,12,18,24,36,72'"/> <input type="button" id="check_10" class="check" data-group="10" value="CHECK" data-feed="#group_10;"/> </p>-->
+            <!--<p>The factors of 81 are: <input type="text" class="save e_tb_factors_9" id="tb-factors_9"/><input type="text" class="eval" id="e_tb_factors_9" data-group="11" data-rule="#tb-factors_9;=='1,3,9,27,81'"/> <input type="button" id="check_99" class="check" data-group="11" value="CHECK" data-feed="#group_11;"/></p>-->
+            <p>The factors of 100 are: <input type="text" class="save e_tb_factors_10" id="tb-factors_10"/><input type="text" class="eval" id="e_tb_factors_10" data-group="12" data-rule="#tb-factors_10;=='1,2,4,5,10,20,25,50,100'"/> <input type="button" id="check_100" class="check" data-group="12" value="CHECK" data-feed="#group_12;"/> </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br/>
+    <section id="question-2" class="question">
+      <div id="notes-2" class="notes">
+        <p class="skill" data-skill="Prime Factor Trees"></p>
+        <div class="paper">
+          <div class="video" id="v2" data-src="images/videos/1.0.2.3.mp4"></div>
+          <div class="book" id="instructions-2">
+            <p>Prime numbers are the building blocks that all integers on the number line are built from.  For example, you can build the number 12 by multiplying the prime number 3 by the prime number 4.</p>
+            <p>EXAMPLE: <span id="s2_s1" class="mathquill-embedded-latex">12 = 3 \cdot 4</span></p>
+            <p>Just as every human has unique DNA, every integer on the number line has a unique set of prime building blocks.  Breaking numbers down into their prime building blocks can be useful.  When we do this, it is called a “Prime Factor Tree.”  The name comes from the fact that when drawn out on paper, the process looks like tree branches.</p>
+            <p>EXAMPLE: Express the number 36 as the product of prime factors.</p>
+            <p>If you know your times tables, then you know that <span id="s2_s2" class="mathquill-embedded-latex">36 = 4 \cdot 9</span></p>
+            <p>We can draw this as two branches splitting out of 36.</p>
+            <p style="text-align:center;"><img width="200px" src="images/tree_1.png"/></p>
+            <p>Next we ask ourselves, "Is the number 4 a prime number?" The answer is no.<br/>
+            "Is the number 9 a prime number?" The answer is no.<br/>This means that both factors need to be broken down further.<br/>In this case, <span id="s2_s3" class="mathquill-embedded-latex">4 = 2 \cdot 2 </span> and <span id="s2_s4" class="mathquill-embedded-latex">9 = 3 \cdot 3.</span><br/>
+            We can draw this as more branches splitting apart.</p>
+            <p style="text-align:center;"><img width="200px" src="images/tree_2.png"/></p>
+            <p>Next we ask ourselves, "Is the number 2 a prime number?"  The answer is yes.<br/>
+            "Is the number 3 a prime number?" The answer is yes.<br/>
+            It helps to circle prime numbers to visually show you have reached the end of the branch.</p>
+            <p style="text-align:center;"><img width="200px;"src="images/tree_3.png"/></p>
+            <p>Once you have reached the end of every branch, you can write your final answer.  We usually write the answer in ascending order, meaning we start with small factors and end with large factors.</p>
+            <p>The number 36 can be written as <span id="s2_s5" class="mathquill-embedded-latex">2 \cdot 2 \cdot 3 \cdot 3</span></p>
+            <p>This is a unique combination of prime factors. No other number on the number line has the same combination. It is the "number DNA" of 36.</p>
+            <hr>
+            <p>Let's look at one more example</p>
+            <p>Express the number 20 as the product of prime numbers.</p>
+            <p>There are several ways we could start this process. We couls say <span id="s2_s6" class="mathquill-embedded-latex">4 \cdot 5 = 20 </span> or <span id="s2_s7" class="mathquill-embedded-latex">2 \cdot 10 = 20</span></p>
+            <p style="text-align:center;"><img width="400px" src="images/tree_4.png"/></p>
+            <p>It doesnt matter how you start. You will get the same final answer.</p>
+            <p style="text-align:center;"><img width="400px" src="images/tree_5.png"/></p>
+            <p>Both trees ended with the same set of prime numbers.</p>
+            <p>The number 20 can be written as <span id="s2_s8" class="mathquill-embedded-latex">2 \cdot 2 \cdot 5</span></p>
+          </div>
+          <div>
+            <p>Write the following factor trees in ascending order and separated by the * multiplication symbol.</p>
+            <p>EXAMPLE:  20 = 2*2*5</p>
+            <p>Write the prime factor tree for 9: <input type="text" class="save e_tb_pfactors_1" id="tb-pfactors_1"/><input type="text" class="eval" id="e_tb_pfactors_1" data-group="13" data-rule="#tb-pfactors_1;=='3*3'"/> <input type="button" id="check_11" class="check" data-group="13" value="CHECK" data-feed="#group_13;"/></p>
+            <!--<p>Write the prime factor tree for 18: <input type="text" class="save e_tb_pfactors_2" id="tb-pfactors_2"/><input type="text" class="eval" id="e_tb_pfactors_2" data-group="14" data-rule="#tb-pfactors_2;~~2&3*3"/> <input type="button" id="check_12" class="check" data-group="14" value="CHECK" data-feed="#group_14;"/> </p>-->
+            <p>Write the prime factor tree for 24: <input type="text" class="save e_tb_pfactors_3" id="tb-pfactors_3"/><input type="text" class="eval" id="e_tb_pfactors_3" data-group="15" data-rule="#tb-pfactors_3;~~2*2*2&3"/> <input type="button" id="check_13" class="check" data-group="15" value="CHECK" data-feed="#group_15;"/> </p>
+            <p>Write the prime factor tree for 40: <input type="text" class="save e_tb_pfactors_4" id="tb-pfactors_4"/><input type="text" class="eval" id="e_tb_pfactors_4" data-group="16" data-rule="#tb-pfactors_4;~~2*2*2&5&!4&!10"/> <input type="button" id="check_14" class="check" data-group="16" value="CHECK" data-feed="#group_16;"/> </p>
+            <!--<p>Write the prime factor tree for 45: <input type="text" class="save e_tb_pfactors_5" id="tb-pfactors_5"/><input type="text" class="eval" id="e_tb_pfactors_5" data-group="17" data-rule="#tb-pfactors_5;~~3*3&5"/> <input type="button" id="check_15" class="check" data-group="17" value="CHECK" data-feed="#group_17;"/> </p>-->
+            <!--<p>Write the prime factor tree for 54: <input type="text" class="save e_tb_pfactors_6" id="tb-pfactors_6"/><input type="text" class="eval" id="e_tb_pfactors_6" data-group="18" data-rule="#tb-pfactors_6;~~3*3*3&2"/> <input type="button" id="check_16" class="check" data-group="18" value="CHECK" data-feed="#group_18;"/> </p>-->
+            <p>Write the prime factor tree for 63: <input type="text" class="save e_tb_pfactors_7" id="tb-pfactors_7"/><input type="text" class="eval" id="e_tb_pfactors_7" data-group="19" data-rule="#tb-pfactors_7;~~3*3&7"/> <input type="button" id="check_17" class="check" data-group="19" value="CHECK" data-feed="#group_19;"/> </p>
+            <p>Write the prime factor tree for 75: <input type="text" class="save e_tb_pfactors_8" id="tb-pfactors_8"/><input type="text" class="eval" id="e_tb_pfactors_8" data-group="20" data-rule="#tb-pfactors_8;~~3&5*5"/> <input type="button" id="check_18" class="check" data-group="20" value="CHECK" data-feed="#group_20;"/> </p>
+            <!--<p>Write the prime factor tree for 84: <input type="text" class="save e_tb_pfactors_9" id="tb-pfactors_9"/><input type="text" class="eval" id="e_tb_pfactors_9" data-group="21" data-rule="#tb-pfactors_9;~~2*2&3&7"/> <input type="button" id="check_19" class="check" data-group="21" value="CHECK" data-feed="#group_21;"/></p>-->
+            <!--<p>Write the prime factor tree for 99: <input type="text" class="save e_tb_pfactors_10" id="tb-pfactors_10"/><input type="text" class="eval" id="e_tb_pfactors_10" data-group="22" data-rule="#tb-pfactors_10;~~3*3&11"/> <input type="button" id="check_20" class="check" data-group="22" value="CHECK" data-feed="#group_22;"/> </p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <br/>
+    <section id="question-3" class="question">
+      <div id="notes-3" class="notes">
+        <p class="skill" data-skill="Greatest Common Factor"></p>
+        <div class="paper">
+          <div class="video" id="v3" data-src="images/videos/1.0.2.4.mp4"></div>
+          <div class="book" id="instructions-3">
+            <p>Sometimes two numbers share common factors. Identifying what these factors are can help us simplify our answers.</p>
+            <p>EXAMPLE: Both 30 and 40 can be divided by the numbers 2, 5, and 10.</p>
+			  <p>The largest factor that two numbers share is called the <span class="blue">Greatest Common Factor."</span> In the example shown above, the number 10 was the greatest common factor.</p>
+            <p>There are two ways to identify the greatest common factor.</p>
+            <p>Method 1: List all factors of both numbers<br/>
+              <span class="indent">Find the largest factor both numbers share.</span>
+            </p>
+            <p>Method 2: Make a prime factor tree.<br/>
+              <span class="indent">Identify the factors which both trees share and multiply them</span>
+            </p>
+            <p>Let's try it.</p>
+            <p>What is the greatest common factor of 60 and 72?</p>
+			  <p>Method 1: The factors of 60 are: 1, 2, 3, 4, 5, 6, 10, <span class="blue">12</span>, 20, 30, 60<br/>
+				  <span class="indent">The factors of 72 are:  1, 2, 3, 4, 6, 8, 9, <span class="blue">12</span>, 18, 36, 72</span><br/>
+				  <span class="indent">The largest factor that both numbers share is <span class="blue">12</span></span>
+            </p>
+			  <p>Method 2: The prime factor tree for 60 is: <span class="blue">2</span>*<span class="blue">2</span>*<span class="blue">3</span>*5<br/>
+				  <span class="indent">The prime factor tree for 72 is: <span class="blue">2</span>*<span class="blue">2</span>*2*<span class="blue">3</span>*3</span><br/>
+				  <span class="indent">The common factors of both trees are <span class="blue">2*2*3</span></span><br/>
+              <span class="indent">This means the greatest common factor is <span id="s23_s3" class="mathquill-embedded-latex">2 \cdot 2 \cdot 3 = 12</span></span>
+            </p>
+          </div>
+          <div>
+            <p>METHOD 1 PRACTICE:</p>
+            <p>List all the factors of 16: <input type="text" class="save e_tb_gcf_1" id="tb-gcf_1"/><input type="text" class="eval" id="e_tb_gcf_1" data-group="23" data-rule="#tb-gcf_1;=='1,2,4,8,16'"/><br/>
+              List all the factors of 20: <input type="text" class="save e_tb_gcf_2" id="tb-gcf_2"/><input type="text" class="eval" id="e_tb_gcf_2" data-group="23" data-rule="#tb-gcf_2;=='1,2,4,5,10,20'"/><br/>
+              What is the greatest common factor of 16 and 20? <input type="text" class="save e_tb_gcf_3" id="tb-gcf_3"/><input type="text" class="eval" id="e_tb_gcf_3" data-group="23" data-rule="#tb-gcf_3;=='4'"/> <input type="button" id="check_21" class="check" data-group="23" value="CHECK" data-feed="#group_13;"/>
+            </p>
+            <!--<p>List all the factors of 42: <input type="text" class="save e_tb_gcf_4" id="tb-gcf_4"/><input type="text" class="eval" id="e_tb_gcf_4" data-group="24" data-rule="#tb-gcf_4;=='1,2,3,6,7,14,21,42'"/><br/>
+              List all the factors of 14: <input type="text" class="save e_tb_gcf_5" id="tb-gcf_5"/><input type="text" class="eval" id="e_tb_gcf_5" data-group="24" data-rule="#tb-gcf_5;=='1,2,7,14'"/><br/>
+              What is the greatest common factor of 42 and 14? <input type="text" class="save e_tb_gcf_6" id="tb-gcf_6"/><input type="text" class="eval" id="e_tb_gcf_6" data-group="24" data-rule="#tb-gcf_6;=='14'"/> <input type="button" id="check_22" class="check" data-group="24" value="CHECK" data-feed="#group_14;"/>
+            </p>-->
+            <p>List all the factors of 100: <input type="text" class="save e_tb_gcf_7" id="tb-gcf_7"/><input type="text" class="eval" id="e_tb_gcf_7" data-group="25" data-rule="#tb-gcf_7;=='1,2,4,5,10,20,25,50,100'"/><br/>
+              List all the factors of 40: <input type="text" class="save e_tb_gcf_8" id="tb-gcf_8"/><input type="text" class="eval" id="e_tb_gcf_8" data-group="25" data-rule="#tb-gcf_8;=='1,2,4,5,8,10,20,40'"/><br/>
+              What is the greatest common factor of 100 and 40? <input type="text" class="save e_tb_gcf_9" id="tb-gcf_9"/><input type="text" class="eval" id="e_tb_gcf_9" data-group="25" data-rule="#tb-gcf_9;=='20'"/> <input type="button" id="check_23" class="check" data-group="25" value="CHECK" data-feed="#group_15;"/>
+            </p>
+          </div>
+          <div>
+          <p>METHOD 2 PRACTICE:</p>
+            <p>Write the prime factor tree for 32 (separate with *): <input type="text" class="save e_tb_gcf_10" id="tb-gcf_10"/><input type="text" class="eval" id="e_tb_gcf_10" data-group="26" data-rule="[#tb-gcf_10;=='2*2*2*2*2']"/><br/>
+              Write the prime factor tree for 24: <input type="text" class="save e_tb_gcf_11" id="tb-gcf_11"/><input type="text" class="eval" id="e_tb_gcf_11" data-group="26" data-rule="#tb-gcf_11;~~2*2*2&3"/><br/>
+              What factors do both trees share? <input type="text" class="save e_tb_gcf_12" id="tb-gcf_12"/><input type="text" class="eval" id="e_tb_gcf_12" data-group="26" data-rule="#tb-gcf_12;=='2*2*2'"/><br/>
+              What is the greatest common factor of 32 and 24? <input type="text" class="save e_tb_gcf_13" id="tb-gcf_13"/><input type="text" class="eval" id="e_tb_gcf_13" data-group="26" data-rule="#tb-gcf_13;=='8'"/> <input type="button" id="check_24" class="check" data-group="26" value="CHECK" data-feed="#group_16;"/>
+            </p>
+            <p>Write the prime factor tree for 50: <input type="text" class="save e_tb_gcf_14" id="tb-gcf_14"/><input type="text" class="eval" id="e_tb_gcf_14" data-group="27" data-rule="#tb-gcf_14;~~5*5&2"/><br/>
+              Write the prime factor tree for 30: <input type="text" class="save e_tb_gcf_15" id="tb-gcf_15"/><input type="text" class="eval" id="e_tb_gcf_15" data-group="27" data-rule="#tb-gcf_15;~~5&3&2"/><br/>
+              What factors do both trees share? <input type="text" class="save e_tb_gcf_16" id="tb-gcf_16"/><input type="text" class="eval" id="e_tb_gcf_16" data-group="27" data-rule="#tb-gcf_16;~~5&2"/><br/>
+              What is the greatest common factor of 50 and 30? <input type="text" class="save e_tb_gcf_17" id="tb-gcf_17"/><input type="text" class="eval" id="e_tb_gcf_17" data-group="27" data-rule="#tb-gcf_17;=='10'"/> <input type="button" id="check_25" class="check" data-group="27" value="CHECK" data-feed="#group_17;"/>
+            </p>
+            <!--<p>Write the prime factor tree for 125: <input type="text" class="save e_tb_gcf_18" id="tb-gcf_18"/><input type="text" class="eval" id="e_tb_gcf_18" data-group="28" data-rule="#tb-gcf_18;=='5*5*5'"/><br/>
+              Write the prime factor tree for 200: <input type="text" class="save e_tb_gcf_19" id="tb-gcf_19"/><input type="text" class="eval" id="e_tb_gcf_19" data-group="28" data-rule="#tb-gcf_19;~~2*2*2&5*5"/><br/>
+              What factors do both trees share?<input type="text" class="save e_tb_gcf_20" id="tb-gcf_20"/><input type="text" class="eval" id="e_tb_gcf_20" data-group="28" data-rule="#tb-gcf_20;=='5*5'"/><br/>
+              What is the greatest common factor of 125 and 200? <input type="text" class="save e_tb_gcf_21" id="tb-gcf_21"/><input type="text" class="eval" id="e_tb_gcf_21" data-group="28" data-rule="#tb-gcf_21;=='25'"/> <input type="button" id="check_26" class="check" data-group="28" value="CHECK" data-feed="#group_28;"/>
+            </p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <br/>
+    <section id="question-4" class="question">
+      <div id="notes-4" class="notes">
+        <p class="skill" data-skill="Greatest Common Factor with Variables"></p>
+        <div class="paper">
+          <div class="video" id="v1" data-src="images/videos/1.0.2.5.mp4"></div>
+          <div class="book" id="instructions-4">
+            <p>Sometimes the expressions we are compairing contain letters instead of just numbers.</p>
+            <p>EXAMPLE: What is the greatest common factor of <span id="s4_s1" class="mathquill-embedded-latex">12a^2b^2c^3 </span> and <span id="s4_s2" class="mathquill-embedded-latex">18ab^4c^2</span></p>
+            <p>When this happens, it helps to expand each term out using prime factor trees and getting rid of exponents.</p>
+            <p><span id="s4_s3" class="mathquill-embedded-latex">12a^2b^2c^3 = 2 \cdot 2 \cdot 3 \cdot a \cdot a \cdot b \cdot b \cdot c \cdot c \cdot c</span><br/>
+              <span id="s4_s4" class="mathquill-embedded-latex">18ab^4c^2 = 2 \cdot 3 \cdot 3 \cdot a \cdot b \cdot b \cdot b \cdot b \cdot c \cdot c </span></p>
+            <p>Now we just have to look for all factors that both expressions share.</p>
+            <p>They both have a 2.<br/>
+              They both have a 3.<br/>
+              They both have the letter a.<br/>
+              They both have two letter b's.<br/>
+              They both have two letter c's.
+            </p>
+            <p>This means the greatest common factor will be <span id="s4_s5" class="mathquill-embedded-latex">2 \cdot 3 \cdot a \cdot b \cdot b \cdot c \cdot c = 6ab^2c^2</span></p>
+            <p>Let's look at one more.</p>
+            <p>EXAMPLE: What is the greatest common factor of <span id="s4_s6" class="mathquill-embedded-latex">15g^6h^2 </span> and <span id="s4_s7" class="mathquill-embedded-latex">10h^4g^5</span></p>
+            <p><span id="s4_s8" class="mathquill-embedded-latex">15g^6h^2 = 3 \cdot 5 \cdot g \cdot g \cdot g \cdot g \cdot g \cdot g \cdot h \cdot h</span><br/>
+              <span id="s4_s9" class="mathquill-embedded-latex">10h^4g^5 = 2 \cdot 5 \cdot h \cdot h \cdot h \cdot h \cdot g \cdot g \cdot g \cdot g</span>
+            </p>
+            <p>They both have a 5.<br/>
+              They both have five letter g's<br/>
+              They both have two letter h's
+            </p>
+            <p>This means the greatest common factor will be <span id="s4_s10" class="mathquill-embedded-latex">5 \cdot g \cdot g \cdot g \cdot g \cdot g \cdot h \cdot h = 5g^5h^2</span></p>
+          </div>
+          <div>
+            <p>Expand the term <span id="s4_s11" class="mathquill-embedded-latex">21a^2 </span>
+              &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w1" id="w1" data-key="21*a^2"></span>
+              <input type="text" class="eval" id="e_w1" data-group="29" data-rule="[#w1_storage;~~3&7]&&[#w1_eval;==1]&&[#w1_storage;.indexOf('^')==-1]"/><br/>
+              Expand the term <span id="s4_s12" class="mathquill-embedded-latex">14a^5 </span>
+              &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w2" id="w2" data-key="14*a^5"></span>
+              <input type="text" class="eval" id="e_w2" data-group="29" data-rule="[#w2_storage;~~2&7]&&[#w2_eval;==1]&&[#w2_storage;.indexOf('^')==-1]"/><br/>
+              What factors do both expansions share?
+               &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w3" id="w3" data-key="7*a^2"></span>
+              <input type="text" class="eval" id="e_w3" data-group="29" data-rule="[#w3_storage;~~7]&&[#w3_eval;==1]&&[#w3_storage;.indexOf('^')==-1]"/><br/>
+              This means the greatest common factor is
+              <span type="text" class="store_me mathquill-editable e_w4" id="w4" data-key="7*a^2"></span>
+              <input type="text" class="eval" id="e_w4" data-group="29" data-rule="[#w4_storage;~~7]&&[#w4_eval;==1]&&[#w4_storage;.indexOf('^')!=-1]"/>
+              <input type="button" id="check_27" class="check" data-group="29" value="CHECK" data-feed="#group_29;"/>
+            </p>
+            <p>Expand the term <span id="s4_s13" class="mathquill-embedded-latex">50m^3np^2</span>
+               &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w5" id="w5" data-key="50*m^3*n*p^2"></span>
+              <input type="text" class="eval" id="e_w5" data-group="30" data-rule="[#w5_storage;~~2&5]&&[#w5_eval;==1]&&[#w5_storage;.indexOf('^')==-1]"/><br/>
+              Expand the term <span id="s4_s14" class="mathquill-embedded-latex">25n^2p^4</span>
+               &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w6" id="w6" data-key="25*n^2*p^4"></span>
+              <input type="text" class="eval" id="e_w6" data-group="30" data-rule="[#w6_storage;~~!25]&&[#w6_eval;==1]&&[#w6_storage;.indexOf('^')==-1]"/><br/>
+              What factors do both expansions share?
+              &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w7" id="w7" data-key="25*n*p^2"></span>
+              <input type="text" class="eval" id="e_w7" data-group="30" data-rule="[#w7_storage;~~'5']&&[#w7_eval;==1]&&[#w7_storage;.indexOf('^')==-1]"/> <br/>
+              This means the greatest common factor is
+              <span type="text" class="store_me mathquill-editable e_w8" id="w8" data-key="25np^2"></span>
+              <input type="text" class="eval" id="e_w8" data-group="30" data-rule="[#w8_storage;~~'5']&&[#w8_eval;==1]&&[#w8_storage;.indexOf('^')!=-1]"/>
+              <input type="button" id="check_28" class="check" data-group="30" value="CHECK" data-feed="#group_30;"/>
+            </p>
+            <!--<p>Expand the term <span id="s4_s15" class="mathquill-embedded-latex">15h^4k^2g</span>
+              &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w9" id="w9" data-key="15*h^4*k^2*g"></span>
+              <input type="text" class="eval" id="e_w9" data-group="31" data-rule="[#w9_storage;~~3&5]&&[#w9_eval;==1]&&[#w9_storage;.indexOf('^')==-1]"/><br/>
+              Expand the term <span id="s4_s16" class="mathquill-embedded-latex">35k^3g^2h^2</span>
+               &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w10" id="w10" data-key="35*k^3*g^2*h^2"></span>
+              <input type="text" class="eval" id="e_w10" data-group="31" data-rule="[#w10_storage;~~5&7]&&[#w10_eval;==1]&&[#w10_storage;.indexOf('^')==-1]"/><br/>
+              What factors do both expanstions share?
+              &nbsp;&nbsp;<span type="text" class="store_me mathquill-editable e_w11" id="w11" data-key="5h^2k^2g"></span>
+              <input type="text" class="eval" id="e_w11" data-group="31" data-rule="[#w11_storage;~~5]&&[#w11_eval;==1]&&[#w11_storage;.indexOf('^')==-1]"/><br/>
+              This means the greatest common factor is
+              <span type="text" class="store_me mathquill-editable e_w12" id="w12" data-key="5h^2k^2g"></span>
+              <input type="text" class="eval" id="e_w12" data-group="31" data-rule="[#w12_storage;~~5]&&[#w12_eval;==1]&&[#w12_storage;.indexOf('^')!=-1]"/>
+              <input type="button" id="check_29" class="check" data-group="31" value="CHECK" data-feed="#group_31;"/>
+            </p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <br/>
+    <section id="question-5" class="question">
+      <div id="notes-5" class="notes">
+        <p class="skill" data-skill="Least Common Multiple"></p>
+        <div class="paper">
+          <div class="video" id="v5" data-src="images/videos/1.0.2.6.mp4"></div>
+          <div class="book" id="instructions-5">
+            <p>We have learned to identify which factors are shared by two expressions. But sometimes we want to go the other direction. We start with two known factors and we want to know what multiples they both agree on.</p>
+            <p>For example, the factors 2 and 5 will both go into 10 and 20 and 30.<br/>
+				We are usually interested in the smallest answer.  It is called the  <span class="blue">LEAST COMMON MULTIPLE.</span><br/>
+              In this case, the least common multiple of 2 and 5 is 10.
+            </p>
+            <p>There are two ways to identify the least common multiple.</p>
+            <p>Method 1: List several multiples of both factors.<br/>
+              <span class="indent">Look for the smallest multiple they share.</span>
+            </p>
+            <p>Method 2: Make prime factor trees of both multiples.<br/>
+              <span class="indent">Multiply their common factors by their different factors.</span>
+            </p>
+            <p>Let's try both.</p>
+            <p>What is the least common multiple of 12 and 20?</p>
+            <p>Method 1: List multiples of 12:&nbsp;&nbsp;&nbsp;&nbsp;12, 24, 36, 48, 60<br/>
+              <span class="indent">List multples of 20:&nbsp;&nbsp;&nbsp;&nbsp;20, 40, 60, 80, 100</span><br/>
+              <span class="indent">The smalles multiple they share is 60</span>
+            </p>
+            <p>Method 2: Factor tree of 12:&nbsp;&nbsp;&nbsp;&nbsp;<span id="s5_s1" class="mathquill-embedded-latex"> 2 \cdot 2 \cdot 3</span><br/>
+              <span class="indent">Factor tree of 20:&nbsp;&nbsp;&nbsp;&nbsp;</span> <span id="s5_s2" class="mathquill-embedded-latex"> 2 \cdot 2 \cdot 5</span><br/>
+              <span class="indent">Common factors they agree on:&nbsp;&nbsp;&nbsp;&nbsp;2*2</span><br/>
+              <span class="indent">Different factors they do NOT agree on:&nbsp;&nbsp;&nbsp;&nbsp;3*5</span><br/>
+              <span class="indent">The least common multiple is</span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="s5_s3" class="mathquill-embedded-latex">2 \cdot 2 \cdot 3 \cdot 5 = 60</span>
+            </p>
+          </div>
+          <p>METHOD 1 PRACTICE</p>
+          <p>List the first five multiples of 12
+            <input type="text" class="save e_tb_lcm_1" id="tb-lcm_1"/>
+            <input type="text" class="eval" id="e_tb_lcm_1" data-group="32" data-rule="[#tb-lcm_1;=='12,24,36,48,60']"/><br/>
+             List the first five multiples of 15
+            <input type="text" class="save e_tb_lcm_2" id="tb-lcm_2"/>
+            <input type="text" class="eval" id="e_tb_lcm_2" data-group="32" data-rule="[#tb-lcm_2;=='15,30,45,60,75']"/><br/>
+             What is the least common multiple of 12 and 15?
+            <input type="text" class="save e_tb_lcm_3" id="tb-lcm_3"/>
+            <input type="text" class="eval" id="e_tb_lcm_3" data-group="32" data-rule="[#tb-lcm_3;=='60']"/>
+            <input type="button" id="check_30" class="check" data-group="32" value="CHECK" data-feed="#group_32;"/>
+          </p>
+          <p>List the first five multiples of 20
+            <input type="text" class="save e_tb_lcm_4" id="tb-lcm_4"/>
+            <input type="text" class="eval" id="e_tb_lcm_4" data-group="33" data-rule="[#tb-lcm_4;=='20,40,60,80,100']"/><br/>
+             List the first five multiples of 25
+            <input type="text" class="save e_tb_lcm_5" id="tb-lcm_5"/>
+            <input type="text" class="eval" id="e_tb_lcm_5" data-group="33" data-rule="[#tb-lcm_5;=='25,50,75,100,125']"/><br/>
+             What is the least common multiple of 20 and 25?
+            <input type="text" class="save e_tb_lcm_6" id="tb-lcm_6"/>
+            <input type="text" class="eval" id="e_tb_lcm_6" data-group="33" data-rule="[#tb-lcm_6;=='100']"/>
+            <input type="button" id="check_31" class="check" data-group="33" value="CHECK" data-feed="#group_23;"/>
+          </p>
+          <!--<p>List the first five multiples of 14
+            <input type="text" class="save e_tb_lcm_7" id="tb-lcm_7"/>
+            <input type="text" class="eval" id="e_tb_lcm_7" data-group="34" data-rule="[#tb-lcm_7;=='14,28,42,56,70']"/><br/>
+             List the first five multiples of 35
+            <input type="text" class="save e_tb_lcm_8" id="tb-lcm_8"/>
+            <input type="text" class="eval" id="e_tb_lcm_8" data-group="34" data-rule="[#tb-lcm_8;=='35,70,105,140,175']"/><br/>
+             What is the least common multiple of 14 and 35?
+            <input type="text" class="save e_tb_lcm_9" id="tb-lcm_9"/>
+            <input type="text" class="eval" id="e_tb_lcm_9" data-group="34" data-rule="[#tb-lcm_9;=='70']"/>
+            <input type="button" id="check_32" class="check" data-group="34" value="CHECK" data-feed="#group_34;"/>
+          </p>-->
+          <br/>
+          <p>METHOD 2 PRACTICE</p>
+          <p>Write the prime factor tree for 21
+            <input type="text" class="save e_tb_lcm_10" id="tb-lcm_10"/>
+            <input type="text" class="eval" id="e_tb_lcm_10" data-group="35" data-rule="[#tb-lcm_10;~~3&7]"/><br/>
+             Write the prime factor tree for 35
+            <input type="text" class="save e_tb_lcm_11" id="tb-lcm_11"/>
+            <input type="text" class="eval" id="e_tb_lcm_11" data-group="35" data-rule="[#tb-lcm_11;~~7&5]"/><br/>
+             What factors do both trees share?
+            <input type="text" class="save e_tb_lcm_12" id="tb-lcm_12"/>
+            <input type="text" class="eval" id="e_tb_lcm_12" data-group="35" data-rule="[#tb-lcm_12;=='7']"/><br/>
+             What factors do the trees NOT share?
+            <input type="text" class="save e_tb_lcm_13" id="tb-lcm_13"/>
+            <input type="text" class="eval" id="e_tb_lcm_13" data-group="35" data-rule="[#tb-lcm_13;~~3&5]"/><br/>
+             Ths means the least common multiple of 21 and 35 is
+            <input type="text" class="save e_tb_lcm_14" id="tb-lcm_14"/>
+            <input type="text" class="eval" id="e_tb_lcm_14" data-group="35" data-rule="[#tb-lcm_14;=='105']"/>
+            <input type="button" id="check_33" class="check" data-group="35" value="CHECK" data-feed="#group_35;"/>
+          </p>
+          <p>Write the prime factor tree for 15
+            <input type="text" class="save e_tb_lcm_15" id="tb-lcm_15"/>
+            <input type="text" class="eval" id="e_tb_lcm_15" data-group="36" data-rule="[#tb-lcm_15;~~3&5]"/><br/>
+             Write the prime factor tree for 25
+            <input type="text" class="save e_tb_lcm_16" id="tb-lcm_16"/>
+            <input type="text" class="eval" id="e_tb_lcm_16" data-group="36" data-rule="[#tb-lcm_16;=='5*5']"/><br/>
+             What factors do both trees share?
+            <input type="text" class="save e_tb_lcm_17" id="tb-lcm_17"/>
+            <input type="text" class="eval" id="e_tb_lcm_17" data-group="36" data-rule="[#tb-lcm_17;=='5']"/><br/>
+             What factors do the trees NOT share?
+            <input type="text" class="save e_tb_lcm_18" id="tb-lcm_18"/>
+            <input type="text" class="eval" id="e_tb_lcm_18" data-group="36" data-rule="[#tb-lcm_18;~~'3&5']"/><br/>
+             Ths means the least common multiple of 15 and 25 is
+            <input type="text" class="save e_tb_lcm_19" id="tb-lcm_19"/>
+            <input type="text" class="eval" id="e_tb_lcm_19" data-group="36" data-rule="[#tb-lcm_19;=='75']"/>
+            <input type="button" id="check_34" class="check" data-group="36" value="CHECK" data-feed="#group_36;"/>
+          </p>
+          <!--<p>Write the prime factor tree for 120
+            <input type="text" class="save e_tb_lcm_20" id="tb-lcm_20"/>
+            <input type="text" class="eval" id="e_tb_lcm_20" data-group="37" data-rule="[#tb-lcm_20;~~3&2*2*2&5]"/><br/>
+             Write the prime factor tree for 100
+            <input type="text" class="save e_tb_lcm_21" id="tb-lcm_21"/>
+            <input type="text" class="eval" id="e_tb_lcm_21" data-group="37" data-rule="[#tb-lcm_21;~~2*2&5*5]"/><br/>
+             What factors do both trees share?
+            <input type="text" class="save e_tb_lcm_22" id="tb-lcm_22"/>
+            <input type="text" class="eval" id="e_tb_lcm_22" data-group="37" data-rule="[#tb-lcm_22;~~2*2&5]"/><br/>
+             What factors do the trees NOT share?
+            <input type="text" class="save e_tb_lcm_23" id="tb-lcm_23"/>
+            <input type="text" class="eval" id="e_tb_lcm_23" data-group="37" data-rule="[#tb-lcm_23;~~3&2&5]"/><br/>
+             Ths means the least common multiple of 120 and 100 is
+            <input type="text" class="save e_tb_lcm_24" id="tb-lcm_24"/>
+            <input type="text" class="eval" id="e_tb_lcm_24" data-group="37" data-rule="[#tb-lcm_24;=='600']"/>
+            <input type="button" id="check_35" class="check" data-group="37" value="CHECK" data-feed="#group_27;"/>-->
+          </p>
+        </div>
+      </div>
+    </section>
+   </section>
+    <div>First Change</div>
+</main>
+<script>
+
+	$('.prime_table').find('td').each(function(){
+		$(this).addClass('special_save');
+	})
+
+	$('.special_save').click(function(){
+		window.setTimeout(function(){log_invisible()},100)
+	})
+
+	$('.star_img').draggable({ revert: 'invalid' });
+	$( ".p" ).droppable({
+  accept: ".star_img"
+});
+	$('.prime_table td').click(function(){
+		if($(this).html()==''){
+			$(this).html($(this).data('html'));
+		}
+		else{
+			$(this).html('');
+		}
+	});
+
+	function log_invisible(){
+		var temp_string='';
+		$('.special_save').each(function(){
+			if($(this).html()==''){
+				temp_string=temp_string+','+$(this).data('html');
+			}
+			$('#invisible_log').val(temp_string);
+			$('#invisible_log').trigger('change');
+		})
+	}
+
+function special(num){
+	var accurate=true;
+	var target_box=$('#special_'+num);
+	$('.p').each(function(){
+		if($(this).html()==''){
+			$(this).html($(this).data('html'));
+		}
+	});
+	$('.m'+num).each(function(){
+		if($(this).html()!=''){
+			if(give_alert){alert("You did not eliminate all the multiples.  Please try again.")};
+			$('.m'+num).each(function(){
+				$(this).html($(this).data('html'));
+			});
+			accurate=false;
+			target_box.val(0);
+			return false;
+		}
+	})
+	if(accurate){
+		target_box.val(1);
+	}
+}
+
+	var give_alert=true;
+	function run_custom_functions(){
+		recreate_prime_table();
+		if($('#check_1b_attempts').val()*1>0){
+			give_alert=false;
+			special(2);
+			give_alert=true;
+		}
+		if($('#check_1c_attempts').val()*1>0){
+			give_alert=false;
+			special(3);
+			give_alert=true;
+		}
+		if($('#check_1d_attempts').val()*1>0){
+			give_alert=false;
+			special(5);
+			give_alert=true;
+		}
+		if($('#check_1e_attempts').val()*1>0){
+			give_alert=false;
+			special(7);
+			give_alert=true;
+		}
+
+
+	}
+
+	function recreate_prime_table(){
+		var invisible=$('#invisible_log').val().split(',');
+		console.log(invisible);
+		var invisible_num='';
+		for(a=1; a<invisible.length; a++){
+			invisible_num=invisible[a];
+			console.log(invisible_num);
+			$('.special_save').each(function(){
+				if($(this).data('html')==invisible_num){
+					$(this).html('');
+				}
+			})
+		}
+	}
+
+	</script>
+<script type="text/javascript" src="common/dynamic_toolbar.js"></script>
+<script type="text/javascript" src="common/latex2.js"></script>
+<script type="text/javascript" src="common/math.js"></script>
+<script type="text/javascript" src="common/scorm.js"></script>
+<script type="text/javascript" src="common/grading.js"></script>
+<script type="text/javascript" src="common/custom.js"></script>
+</body>
+</html>
