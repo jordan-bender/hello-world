@@ -1,0 +1,384 @@
+
+#section1, #section2, #section3, #section4 {
+    border-top:thin solid black;
+    padding-top:10px;
+    display:inherit;
+}
+
+#section1b, #section2b, #section3b, #section4b {
+    margin-top:10px;
+    padding-top:10px;
+    border-top:thin dotted black;
+    display:inline-block;
+    width:100%;
+}
+
+.hidden{display:none;}
+
+#report_parent{
+	border:solid black 1px;
+	border-radius:20px;
+	background-color:#FFC;
+	padding:20px;
+}
+
+#checked_groups{
+	display:none;
+}
+
+.report_table{
+	background-color:white;
+}
+
+.family{display:none;}
+
+.canvas_data{display:none;}
+
+.section_score{
+	border:none;
+	background:transparent;
+	color:white;
+
+}
+#completion_div{
+	margin:auto;
+}
+#completion_table tr{
+	border:none;
+}
+
+#earned_points,#possible_points{
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	width:30px;
+	border:none;
+	background:transparent;
+}
+
+#current_score{
+	float:none;
+	text-align:center;
+	width:75px;
+	float:left;
+	margin-left:2px;
+	padding:3px 0px 3px 0px;
+	background-color:white;
+	border:solid black 2px;
+	border-radius:5px;
+}
+
+.completion_cell{
+	text-align:center;
+	width:60px;
+	float:left;
+	margin-left:2px;
+	padding:3px 0px 3px 0px;
+	cursor:pointer;
+	background-color:#666;
+	color:white;
+	border:solid black 2px;
+	border-radius:5px;
+}
+
+#current_percent{
+	text-align:center;
+	width:75px;
+	float:left;
+	margin-left:5px;
+	padding:3px 0px 3px 0px;
+	border:solid black 2px;
+	border-radius:5px;
+	text-align:center;
+}
+
+#current_percent_box{
+	text-align:center;
+	width:50px;
+	font-size:15px;
+	border:none;
+	background:transparent;
+	font-weight:bold;
+}
+
+#submit_button{
+	text-align:center;
+	width:200px;
+	float:left;
+	margin-left:2px;
+	padding:3px 0px 3px 0px;
+	cursor:pointer;
+	background-color:grey;
+	color:white;
+	border:solid black 2px;
+	border-radius:5px;
+}
+
+
+#report_descriptions{
+	display:none;
+}
+
+
+.divContainer{
+  width:100%;
+  padding:10px 10px 10px 10px;
+  display:inline-block;
+}
+
+.divTables{
+  width:15%;
+  padding-left:10px;
+  padding-right:10px;
+  display:inline-block;
+
+}
+
+.outline{
+	border:solid black 1px;
+	border-radius:10px;
+	padding:5px;
+}
+
+.importantBox{
+    padding:5px;
+    background-color:red;
+    color:white;
+}
+
+.accurate{
+  background-color:lawngreen;
+}
+
+.inaccurate{
+  background-color:red;
+}
+
+
+
+
+.questions{
+  width:75%;
+  margin:auto;
+}
+
+textarea {
+    resize:none;
+    width:95%;
+    height:100px;
+    margin-left:20px;
+    margin-top:3px;
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+.submitSCORM {
+    font-size: small;
+    padding: 5px 15px 5px 15px;
+    background-color: #5B716D;
+    color: white;
+    border-radius: 5px;
+    border-color: #438377;
+    border-style: double;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.submitSCORM:hover {
+    background-color: #89A29E;
+    border-color: orange;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+/*----------------------TEXT AND FONT ATTRIBUTES------------------*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:Geneva, Arial, sans-serif;
+    margin:0px;
+}
+
+h1 {
+  font-size:36px;
+  text-align: center;
+}
+h2 {
+  font-size:30px;
+  text-align: center;
+}
+h3 {
+  font-size:24px;
+  text-align: center;
+}
+section h4{
+	font-size:20px;
+}
+h5 {
+  font-size:18px;
+}
+
+h6 {
+  font-size:16px;
+}
+
+.fs20px{
+	font-size:20px;
+}
+
+.fs30px{
+	font-size:30px;
+}
+.mAuto{
+  margin:auto;
+}
+
+.text-left {
+    text-align:left;
+}
+
+.text-right {
+    text-align:right;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/*-------------------------TABLE CSS------------------------*/
+
+table{
+  margin:auto;
+  border-collapse:collapse;
+}
+
+.rubric,.rubric2{
+  	width:75%;
+	margin:auto;
+}
+
+.rubric td, .rubric tr, .rubric th{
+  border:solid black thin;
+  width:20%;
+
+}
+
+.top{
+  vertical-align:top;
+}
+
+.score{
+	width:25px;
+}
+.indent{
+	margin-left:20px;
+}
+.icon_rubric{
+	width:20px;
+	cursor:pointer;
+}
+.active_rubric{
+	cursor:pointer;
+	display:none;
+}
+
+
+.rubric2 td{
+  border:solid black 1px;
+	padding:5px;
+	width:16%;
+	font-size:14px;
+}
+.rubric_cat{
+	background-color:#C1BEBE;
+}
+.sentence_count{
+	width:20px;
+}
+.grading_table{
+	width:100%;
+}
+.a_right{
+	text-align:right;
+}
+.r_selected{
+	background-color:yellow;
+}
+.gs_rubric{
+	border-collapse:collapse;
+}
+.gs_rubric .title_row td{
+	text-align:center;
+	font-size:20px;
+	background-color:black;
+	color:white;
+}
+.gs_rubric .criteria_row td{
+	border:solid black 1px;
+}
+.gs_rubric .criteria_label{
+	background-color:skyblue;
+}
+.gs_rubric .score_row td{
+	text-align:center;
+}
+
+.lesson-title {
+    text-align:center;
+    width:100%;
+    min-width:300px;
+    padding-left:10px;
+    padding-top:10px;
+
+}
+.lessonImage {
+  text-align:center;
+  width:100px;
+  height:100px;
+}
+
+#lessonTitle{
+  font-size:40px;
+}
+
+#lessonSubtitle{
+  font-size:38px;
+
+}
+

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <script type="text/javascript" src="common_js/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="common_js/jquery-ui-1.9.1.custom.js"></script>
+  </head>
+  <body>
+  <p>Copy and paste the sharable link from your Google Slides presentation into this box.</p>
+    <input type="text" class="google_slide save" id="box_1"/>&nbsp;&nbsp;&nbsp;<input type="button" value="SUBMIT" class="submit_slide"/>
+    <br/>
+    <iframe class="iframe_slide" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+    <script>
+
+      $(".submit_slide").click(
+      function(){
+        var link=$(".google_slide").val();
+        var valid_link=real_link(link);
+        if(valid_link==true){
+        $(".iframe_slide").attr("src", link);
+          api.SetValue("cmi.score.raw",200);
+          api.SetValue("cmi.score.max",100);
+          api.SetValue("cmi.score.scaled",200);
+          api.SetValue("cmi.completion_status","completed");
+          api.Commit("");
+          api.Terminate("");
+        }
+      }
+      )
+      function after_scorm(){
+        var valid_link=real_link(
+          $(".google_slide").val()
+        )
+
+        if(valid_link==true){
+          $(".submit_slide").trigger("click");
+        }
+        };
+      function real_link(student_link){
+        var secure = student_link.indexOf("https:")==0;
+        var google = student_link.indexOf("docs.google.com")!=-1;
+        if(secure==true&&google==true){
+          return true;
+
+        }
+        else {
+          alert("The link you have provided is not a valid Google document link!")
+          return false;
+        }
+      }
+
+
+
+    </script>
+    <script type="text/javascript" src="common_js/scorm_global.js"></script>
+     <script type="text/javascript" src="common_js/scorm_interactions_v6.js"></script>
+  </body>
+</html>
