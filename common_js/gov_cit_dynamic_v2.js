@@ -371,3 +371,5 @@ $('.gs_rubric').find('td').each(function(){
 
 //Jordan was here
 
+//I am typing stuff
+
